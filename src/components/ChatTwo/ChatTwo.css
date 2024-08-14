@@ -1,0 +1,249 @@
+.chat__two {
+    color: #000000;
+  
+    display: flex;
+    flex-direction: column;
+     row-gap: 20px; 
+/*      padding: 20px;   */
+    border-radius: 10px;
+/*     border: 1px solid #e4e4e7; */
+}
+
+.chat__two-top {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.top__two{
+    background: rgb(50, 50, 50);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    transform: translateY(45px);
+}
+
+.chat__two-image img {
+    width: 40px;
+    height: 40px;
+}
+
+.chat__two-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat__two-title {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.chat__two-text {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.chat__two-center {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   row-gap: 10px;
+    /* padding: 20px 0; */
+/*     border-top: 1px solid #e4e4e7; */
+/*     border-bottom: 1px solid #e4e4e7; */
+    overflow-y: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../assets/images/back.png);
+    padding: 40px 20px ;
+
+   
+}
+
+.chat__two-message {
+    max-width: 50%;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+.chat__two-message.chat-one {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    border-radius: 15px 15px 0px 15px;
+    word-wrap: break-word; /* Старый вариант, поддерживается в большинстве браузеров */
+    overflow-wrap: break-word; /* Современный вариант, рекомендуется к использованию */
+    white-space: pre-wrap;
+    background: rgb(208, 220, 255);
+    max-width: 300px;
+/*     margin-left: auto */;
+}
+
+
+
+.chat__two-message.chat-two {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+/*     margin-right: auto; */
+    border-radius: 15px 15px 15px 0px;
+    word-wrap: break-word; /* Старый вариант, поддерживается в большинстве браузеров */
+    overflow-wrap: break-word; /* Современный вариант, рекомендуется к использованию */
+    white-space: pre-wrap;
+    background: rgb(196, 191, 255);
+    margin-left: auto;
+    max-width: 300px;
+}
+
+.chat__two-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 15px;
+    background: rgb(50, 50, 50);
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: translateY(-20px);
+}
+
+.chat__two-input {
+    height: 36px;
+    box-shadow: 0 0 #000000, 0 0 #000000, 0 1px 2px 0 rgba(0, 0, 0, .05);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    border: 1px solid #e4e4e7;
+}
+
+.chat__two-input::placeholder {
+    color: #71717a;
+}
+
+.chat__two-input:focus-visible {
+    outline: 1px solid #000000;
+}
+
+.chat__two-actions {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.chat__two-button {
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    box-shadow: 0 0 #000000, 0 0 #000000, 0 1px 2px 0 rgba(0, 0, 0, .05);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 6px;
+    border: 1px solid #e4e4e7;
+    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chat__two-button:hover {
+    background-color: #f4f4f5;
+}
+
+.chat__two-button:focus-visible {
+    outline: 1px solid #000000;
+}
+
+.chat__two-button img {
+    width: 16px;
+    height: 16px;
+}
+
+
+
+
+
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .chat__two-message.chat-two {
+    animation: slideInRight 0.5s ease-in-out;
+  }
+  
+  .chat__two-message.chat-one {
+    animation: slideInLeft 0.5s ease-in-out;
+  }
+  .chat__two-button {
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .chat__two-button:hover {
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .chat__image {
+    animation: fadeIn 0.5s ease-in;
+    transition: transform 0.2s;
+  }
+  
+  .chat__image:hover {
+    transform: scale(1.05);
+  }
+  .chat__two-input:focus {
+    border-color: #71717a;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+        

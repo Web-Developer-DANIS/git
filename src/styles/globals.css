@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "DM Sans";
+/*     overflow-y: hidden; */
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+button:focus-visible {
+    outline: none;
+}
+
+input {
+    display: flex;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+

@@ -1,0 +1,15 @@
+.main {
+    flex: 1 0 auto;
+}
+
+.section__one {
+    padding: 30px 0;
+}
+
+.section__one-content {
+    height: calc(100vh - 60px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    column-gap: 30px;
+}
